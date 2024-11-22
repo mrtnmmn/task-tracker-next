@@ -7,7 +7,7 @@ export default function Home() {
   const { steps } = useSteps()
 
   return (
-    <div className="w-full max-w-full overflow-x-auto flex flex-row items-center justify-center space-x-4 bg-purple-200">
+    <div className="w-full max-w-full flex flex-row items-center justify-center space-x-4 overflow-auto">
       {steps.length !== 0 ? 
         steps.map((step: Step) =>{
           return (

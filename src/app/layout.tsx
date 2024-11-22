@@ -27,12 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex h-screen w-full`}
       >
         <StepsProvider>
           <SidebarProvider>
             <AppSidebar />
-            <main className="w-full h-screen">
+            <main className="flex-1 overflow-auto">
               <Navbar /> 
               <div className="w-full h-[calc(100vh-64px)]">
                 {children}
